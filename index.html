@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Form</title>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Login Form</h1>
+    <form name="loginForm" action=" ../homepage.html" onsubmit="return validateRegisterForm()" method="POST">
+      <div class="row">
+        <div class="col-25">
+          <label for="userName">Username</label>
+        </div>
+        <div class="col-75">
+         <input type="text" class="form-control" id="userName" name="userName" placeholder="Username" />
+        </div>
+       </div>
+       <div class="row">
+          <div class="col-25">
+            <label for="userEmail">Email</label>
+          </div>
+          <div class="col-75">
+            <input type="email" id="userEmail" name="userEmail" placeholder="Email" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="userPassword">Password</label>
+           </div>
+           <div class="col-75">
+             <input type="password" id="userPassword" name="userPassword" placeholder="Password" />
+           </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="confirmPassword">Confirm Password</label>
+          </div>
+          <div class="col-75">
+            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" />
+          </div>
+        </div>
+      <div class="row">
+        <button type="submit" class="submitbtn">Sign in</button>
+    </div>
+    </form>
+  </div>
+</body>
+<!-- <script src="app.js"></script> -->
+</html>
